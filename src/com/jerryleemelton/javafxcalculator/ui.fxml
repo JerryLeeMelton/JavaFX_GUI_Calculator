@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   Jerry Melton
+   CSIS139 JAVA (Sat 12:50pm)
+   13 - GUI Calculator App
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="root" fx:controller="com.jerryleemelton.javafxcalculator.Controller"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="10"
+      stylesheets="@style.css">
+
+    <fx:define>
+        <Font fx:id="numbersFont" size="18"/>
+        <Font fx:id="outputFont" size="32" />
+        <Font fx:id="operationFont" size="12"/>
+    </fx:define>
+
+    <StackPane prefHeight="100" maxWidth="220">
+
+        <VBox alignment="BOTTOM_RIGHT" spacing="4">
+            <Label fx:id="operations" font="$operationFont" id="operationsText"/>
+            <Label fx:id="output" text="0" font="$outputFont" id="outputText">
+                <padding><Insets bottom="8"/></padding>
+            </Label>
+        </VBox>
+    </StackPane>
+
+
+    <GridPane vgap="8" hgap="8" alignment="CENTER">
+
+        <Button fx:id="clearButton" text="AC" GridPane.rowIndex="0" GridPane.columnIndex="0" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="etcButton" onAction="#processEtc"/>
+        <Button fx:id="percentButton" text="\%" GridPane.rowIndex="0" GridPane.columnIndex="1" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="etcButton" onAction="#processEtc"/>
+        <Button fx:id="backspaceButton" text="BS" GridPane.rowIndex="0" GridPane.columnIndex="2" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="etcButton" onAction="#processEtc"/>
+        <Button fx:id="divideButton" text="÷" GridPane.rowIndex="0" GridPane.columnIndex="3" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="operatorButton" onAction="#processOperators"/>
+
+        <Button fx:id="sevenButton" text="7" GridPane.rowIndex="1" GridPane.columnIndex="0" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="eightButton" text="8" GridPane.rowIndex="1" GridPane.columnIndex="1" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="nineButton" text="9" GridPane.rowIndex="1" GridPane.columnIndex="2" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="multiplyButton" text="×" GridPane.rowIndex="1" GridPane.columnIndex="3" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="operatorButton" onAction="#processOperators"/>
+
+        <Button fx:id="fourButton" text="4" GridPane.rowIndex="2" GridPane.columnIndex="0" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="fiveButton" text="5" GridPane.rowIndex="2" GridPane.columnIndex="1" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="sixButton" text="6" GridPane.rowIndex="2" GridPane.columnIndex="2" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="minusButton" text="-" GridPane.rowIndex="2" GridPane.columnIndex="3" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="operatorButton" onAction="#processOperators"/>
+
+        <Button fx:id="oneButton" text="1" GridPane.rowIndex="3" GridPane.columnIndex="0" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="twoButton" text="2" GridPane.rowIndex="3" GridPane.columnIndex="1" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="threeButton" text="3" GridPane.rowIndex="3" GridPane.columnIndex="2" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="plusButton" text="+" GridPane.rowIndex="3" GridPane.columnIndex="3" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="operatorButton" onAction="#processOperators"/>
+
+        <Button fx:id="plusOrMinusButton" text="±" GridPane.rowIndex="4" GridPane.columnIndex="0" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="etcButton" onAction="#processEtc"/>
+        <Button fx:id="zeroButton" text="0" GridPane.rowIndex="4" GridPane.columnIndex="1" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="numberButton" onAction="#processNumbers"/>
+        <Button fx:id="decimalButton" text="." GridPane.rowIndex="4" GridPane.columnIndex="2" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="etcButton" onAction="#processEtc"/>
+        <Button fx:id="equalsButton" text="=" GridPane.rowIndex="4" GridPane.columnIndex="3" font="$numbersFont"
+                prefWidth="50" prefHeight="50" styleClass="operatorButton" onAction="#processOperators"/>
+    </GridPane>
+
+
+</VBox>

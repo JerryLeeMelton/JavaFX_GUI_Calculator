@@ -1,0 +1,52 @@
+/* 
+   Jerry Melton
+   CSIS139 JAVA (Sat 12:50pm)
+   13 - GUI Calculator App
+*/
+
+.root{
+    -fx-background-color: #181818;
+    -fx-font-size: 14pt;
+}
+
+.button {
+    -fx-background-color: #909090;
+    -fx-background-radius: 50;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, darkgrey, 10, 0, 0, 0);
+}
+
+.button:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.button:pressed {
+    -fx-background-color: #000000;
+    -fx-text-fill: #E8E8E8;
+}
+
+.numberButton {
+    -fx-background-color: #383838;
+    -fx-text-fill: #E8E8E8;
+}
+
+.operatorButton {
+    -fx-background-color: #7CAFC2;
+    -fx-text-fill: #E8E8E8;
+    -fx-font-weight: bold;
+}
+
+.etcButton {
+    -fx-background-color: #B8B8B8;
+}
+
+#outputText {
+    -fx-text-fill: #E8E8E8;
+}
+
+#operationsText {
+    -fx-text-fill: #B8B8B8;
+}
