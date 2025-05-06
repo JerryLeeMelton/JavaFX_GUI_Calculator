@@ -29,6 +29,17 @@ A simple, functional desktop calculator built with JavaFX. This project demonstr
    ```bash
    git clone https://github.com/JerryLeeMelton/JavaFX_GUI_Calculator.git
    cd JavaFX_GUI_Calculator
+   
+2.  Open the project in your IDE.
+    
+3.  Run the `Main.java` file located in:
+    ```bash
+    `src/com/jerryleemelton/javafxcalculator/Main.java` 
+    
+4.  The calculator GUI should launch.
+    
+
+> 💡 **Note**: If you're using JDK 11 or later, you may need to manually include JavaFX libraries. Consider using Maven or SDKMAN to manage dependencies.
 
 ## 📄 License
 This project is open-source and available under the [MIT License](LICENSE).
