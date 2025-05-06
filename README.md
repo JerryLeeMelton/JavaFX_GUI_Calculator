@@ -29,3 +29,11 @@ A simple, functional desktop calculator built with JavaFX. This project demonstr
    ```bash
    git clone https://github.com/JerryLeeMelton/JavaFX_GUI_Calculator.git
    cd JavaFX_GUI_Calculator
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
+## 🙌 Acknowledgements
+
+-   [pts.js](https://ptsjs.org/) for the dynamic graphics library.
+    
+-   [Nodemailer](https://nodemailer.com/) for email handling.
